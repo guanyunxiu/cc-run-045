@@ -1,0 +1,24 @@
+{
+  "name": "blockeditor-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "分布式块级协同编辑器（Yjs CRDT + Vue3 块渲染引擎 + NestJS WebSocket 服务）",
+  "workspaces": [
+    "packages/proto",
+    "packages/core",
+    "packages/client",
+    "packages/server"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev -w @blockeditor/server",
+    "dev:client": "npm run dev -w @blockeditor/client",
+    "typecheck": "npm run typecheck -w @blockeditor/proto && npm run typecheck -w @blockeditor/core && npm run typecheck -w @blockeditor/server && npm run typecheck -w @blockeditor/client",
+    "test:proto": "node packages/proto/test/codec.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
