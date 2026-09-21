@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package blockeditor.v1;
+
+// 块级协同编辑器 WebSocket / HTTP 长轮询统一二进制帧协议。
+// 每个物理消息 = 一个或多个 Frame 经 length-delimited 拼接：
+//   [uint32 BE frameLen][Frame bytes] ...
+// Frame 本身为标准 protobuf 编码，更新载荷字段内再承载
+// y-protocols 的 sync / awareness 消息（亦为二进制），
+// 全程不传输明文文本，仅传输 Yjs 二进制增量更新。
+message Frame {
+  // 帧类型，决定 payload 的语义。
+  Kind kind = 1;
+  // 文档 ID（房间 ID）。握手后服务端可按连接记忆，客户端始终携带。
+  string doc_id = 2;
+  // 载荷：
+  //   SYNC_STEP_*       -> encoding.encodeSyncMessage(...) 结果
+  //   AWARENESS_UPDATE  -> awarenessProtocol.encodeAwarenessUpdate
+  //   AUTH              -> utf-8 编码的 JWT（不放进 URL，避免日志泄漏）
+  bytes payload = 3;
+  // 房间内客户端 ID（Awareness clientID），便于服务端按用户映射。
+  uint32 client_id = 4;
+  // 幂等引用键：SyncUpdate 由客户端携带，Ack 中原样回填。
+  string ref = 5;
+
+  enum Kind {
+    KIND_UNSPECIFIED = 0;
+    // y-protocols sync 子协议
+    SYNC_STEP_1 = 1; // 客户端 StateVector
+    SYNC_STEP_2 = 2; // 增量更新（幂等，可重复推送）
+    SYNC_UPDATE = 3; // 事务产生的增量广播
+    // awareness（光标 / 选区 / 用户信息）
+    AWARENESS_UPDATE = 4;
+    AWARENESS_QUERY = 5;
+    // 连接控制
+    AUTH = 6;
+    ACK = 7;
+    PING = 8;
+    PONG = 9;
+    ERROR = 10;
+  }
+}
+
+message ErrorPayload {
+  uint32 code = 1;
+  string message = 2;
+}

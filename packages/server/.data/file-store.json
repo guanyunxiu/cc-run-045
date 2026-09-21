@@ -1,0 +1,169 @@
+{
+  "users": [
+    {
+      "id": "0b0723a6-4b88-4eee-a6c6-b9584dfd4834",
+      "name": "test",
+      "password_hash": null,
+      "created_at": 1789908383561
+    },
+    {
+      "id": "40809f9d-1f74-4532-aa6e-b287f931ac07",
+      "name": "3",
+      "password_hash": null,
+      "created_at": 1789908427705
+    },
+    {
+      "id": "9a8c2544-1a20-4a46-9d70-c0cd2211fc85",
+      "name": "33",
+      "password_hash": null,
+      "created_at": 1789908878496
+    },
+    {
+      "id": "b22bf514-9966-48b0-98e8-2244b760497a",
+      "name": "gsbcheck",
+      "password_hash": null,
+      "created_at": 1789909287063
+    },
+    {
+      "id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "name": "验证用户",
+      "password_hash": null,
+      "created_at": 1789944955194
+    },
+    {
+      "id": "784c9b86-c742-4fe4-8372-90cf39be67f2",
+      "name": "测试用户_61622",
+      "password_hash": null,
+      "created_at": 1789945761651
+    },
+    {
+      "id": "7a59ca51-0afb-4d90-98ad-a3af20c1f69c",
+      "name": "nihao",
+      "password_hash": null,
+      "created_at": 1789950918156
+    },
+    {
+      "id": "e6881a8b-fe1b-47ac-8d9a-a0f4ce1ecb15",
+      "name": "gsbA",
+      "password_hash": null,
+      "created_at": 1789950981014
+    }
+  ],
+  "documents": [
+    {
+      "id": "de103a9e-967e-44eb-a6f0-8b77b8dbbe83",
+      "title": "试一下",
+      "owner_id": "b22bf514-9966-48b0-98e8-2244b760497a",
+      "created_at": 1789909287119,
+      "updated_at": 1789909287119
+    },
+    {
+      "id": "49be95aa-0d69-4de8-a35f-70a0e90cafde",
+      "title": "长轮询验证",
+      "owner_id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "created_at": 1789944955230,
+      "updated_at": 1789944955230
+    },
+    {
+      "id": "ea3f06fa-ae29-41c4-8015-4ffe9639089e",
+      "title": "长轮询验证",
+      "owner_id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "created_at": 1789945377981,
+      "updated_at": 1789945377981
+    },
+    {
+      "id": "83cbe00f-e506-4911-ac69-1af539cf9a2a",
+      "title": "长轮询验证",
+      "owner_id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "created_at": 1789945441410,
+      "updated_at": 1789945441410
+    },
+    {
+      "id": "cbfe48d1-4788-462e-a278-a189f2d230e3",
+      "title": "长轮询验证",
+      "owner_id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "created_at": 1789945728736,
+      "updated_at": 1789945729280
+    },
+    {
+      "id": "452a4dd6-6619-4fd9-80dd-6a3bb00f8251",
+      "title": "E2E 文档",
+      "owner_id": "784c9b86-c742-4fe4-8372-90cf39be67f2",
+      "created_at": 1789945761663,
+      "updated_at": 1789945762702
+    },
+    {
+      "id": "53ea3c99-0e3a-4fd6-b244-6449933f068a",
+      "title": "w",
+      "owner_id": "7a59ca51-0afb-4d90-98ad-a3af20c1f69c",
+      "created_at": 1789950921656,
+      "updated_at": 1789950930186
+    },
+    {
+      "id": "766cb002-141c-46ca-b6fc-0f664824b2b9",
+      "title": "试",
+      "owner_id": "e6881a8b-fe1b-47ac-8d9a-a0f4ce1ecb15",
+      "created_at": 1789950981091,
+      "updated_at": 1789950981091
+    }
+  ],
+  "permissions": [
+    {
+      "doc_id": "de103a9e-967e-44eb-a6f0-8b77b8dbbe83",
+      "user_id": "b22bf514-9966-48b0-98e8-2244b760497a",
+      "role": "owner"
+    },
+    {
+      "doc_id": "49be95aa-0d69-4de8-a35f-70a0e90cafde",
+      "user_id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "role": "owner"
+    },
+    {
+      "doc_id": "ea3f06fa-ae29-41c4-8015-4ffe9639089e",
+      "user_id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "role": "owner"
+    },
+    {
+      "doc_id": "83cbe00f-e506-4911-ac69-1af539cf9a2a",
+      "user_id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "role": "owner"
+    },
+    {
+      "doc_id": "cbfe48d1-4788-462e-a278-a189f2d230e3",
+      "user_id": "f8802477-e468-4dad-9f56-ce6229b206fc",
+      "role": "owner"
+    },
+    {
+      "doc_id": "452a4dd6-6619-4fd9-80dd-6a3bb00f8251",
+      "user_id": "784c9b86-c742-4fe4-8372-90cf39be67f2",
+      "role": "owner"
+    },
+    {
+      "doc_id": "53ea3c99-0e3a-4fd6-b244-6449933f068a",
+      "user_id": "7a59ca51-0afb-4d90-98ad-a3af20c1f69c",
+      "role": "owner"
+    },
+    {
+      "doc_id": "766cb002-141c-46ca-b6fc-0f664824b2b9",
+      "user_id": "e6881a8b-fe1b-47ac-8d9a-a0f4ce1ecb15",
+      "role": "owner"
+    }
+  ],
+  "ydoc_state": [
+    {
+      "doc_id": "cbfe48d1-4788-462e-a278-a189f2d230e3",
+      "state_b64": "AQyKwvfKBQAnAQ9ibG9ja2RvYzpibG9ja3MGcG9sbC0xAScAisL3ygUABG1ldGEBKACKwvfKBQECaWQBdwZwb2xsLTEoAIrC98oFAQR0eXBlAXcJcGFyYWdyYXBoKACKwvfKBQEIcGFyZW50SWQBfigAisL3ygUBCWNyZWF0ZWRCeQF+KACKwvfKBQEJY3JlYXRlZEF0AX0BKACKwvfKBQEJdXBkYXRlZEF0AX0BJwCKwvfKBQAFYXR0cnMBJwCKwvfKBQAEdGV4dAYEAIrC98oFCQ/plb/ova7or6LlkIzmraUIAQ5ibG9ja2RvYzpvcmRlcgF3BnBvbGwtMQA=",
+      "updated_at": 1789945729279
+    },
+    {
+      "doc_id": "452a4dd6-6619-4fd9-80dd-6a3bb00f8251",
+      "state_b64": "AQyA/OeLAwAnAQ9ibG9ja2RvYzpibG9ja3MLZTJlLWJsb2NrLTEBJwCA/OeLAwAEbWV0YQEoAID854sDAQJpZAF3C2UyZS1ibG9jay0xKACA/OeLAwEEdHlwZQF3CXBhcmFncmFwaCgAgPzniwMBCHBhcmVudElkAX4oAID854sDAQljcmVhdGVkQnkBdyQ3ODRjOWI4Ni1jNzQyLTRmZTQtODM3Mi05MGNmMzliZTY3ZjIoAID854sDAQljcmVhdGVkQXQBe0J6DBFNGQAAKACA/OeLAwEJdXBkYXRlZEF0AXtCegwRTRkAACcAgPzniwMABWF0dHJzAScAgPzniwMABHRleHQGBACA/OeLAwkS5Y2P5ZCM57yW6L6R5L2g5aW9CAEOYmxvY2tkb2M6b3JkZXIBdwtlMmUtYmxvY2stMQA=",
+      "updated_at": 1789945762701
+    },
+    {
+      "doc_id": "53ea3c99-0e3a-4fd6-b244-6449933f068a",
+      "state_b64": "ASmCl8KUAgAnAQ9ibG9ja2RvYzpibG9ja3MwX19zdGFydGVyX186NTNlYTNjOTktMGUzYS00ZmQ2LWIyNDQtNjQ0OTkzM2YwNjhhAScAgpfClAIABG1ldGEBKACCl8KUAgECaWQBdzBfX3N0YXJ0ZXJfXzo1M2VhM2M5OS0wZTNhLTRmZDYtYjI0NC02NDQ5OTMzZjA2OGEhAIKXwpQCAQR0eXBlASgAgpfClAIBCHBhcmVudElkAX4oAIKXwpQCAQljcmVhdGVkQnkBdyQ3YTU5Y2E1MS0wYWZiLTRkOTAtOThhZC1hM2FmMjBjMWY2OWMoAIKXwpQCAQljcmVhdGVkQXQBe0J6DBY4wLAAIQCCl8KUAgEJdXBkYXRlZEF0AScAgpfClAIABWF0dHJzAScAgpfClAIABHRleHQGCAEOYmxvY2tkb2M6b3JkZXIBdzBfX3N0YXJ0ZXJfXzo1M2VhM2M5OS0wZTNhLTRmZDYtYjI0NC02NDQ5OTMzZjA2OGEEAIKXwpQCCQFloYKXwpQCBwGEgpfClAILAWWhgpfClAIMAYSCl8KUAg0BZqGCl8KUAg4BhIKXwpQCDwFkoYKXwpQCEAGEgpfClAIRAWahgpfClAISAYSCl8KUAhMBZKGCl8KUAhQBxIKXwpQCE4KXwpQCFQFmoYKXwpQCFgGhgpfClAIDAaGCl8KUAhgBoYKXwpQCGQGhgpfClAIaASEAgpfClAIIBWxldmVsAaGCl8KUAhwBoYKXwpQCGwGhgpfClAIeAaGCl8KUAh0BoYKXwpQCIAGhgpfClAIfAaGCl8KUAiIBqIKXwpQCIwF3B2hlYWRpbmehgpfClAIkAaiCl8KUAiEBfQKogpfClAImAXtCegwWOrEgAAGCl8KUAgoDAQcBDAEOARABEgEUARYBGA0mAQ==",
+      "updated_at": 1789950930185
+    }
+  ]
+}
